@@ -19,15 +19,8 @@ body {
 .logo {
   height: 80px;
   width: auto;
-  display: block;
 }
 
-
-.main{
-    text-align: left;
-    font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif
-}
 
 .photo {
   display: flex;
@@ -36,28 +29,26 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
-
-.text {
+.row {
   flex: 1;
   min-width: 0;
 }
 
-.text h3 {
-  font-size: 50px;
+.row h3 { font-size: 70px; margin: 0 0 8px 0; text-align: center; }
+.row h4 { font-size: 29px; margin: 0 0 12px 0; text-align: center; }
+.row p  { font-size: 20px; margin: 0; text-align: justify; }
+
+.girl {
+  width: 45%;
+  flex-shrink: 0;
 }
 
-.text h4 {
-    transform: translateY(-50px);
-  font-size: 20px;
+.girl img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.text p {
-  margin: 0;
-  text-align: justify;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-  transform: translateY(-50px);
-}
 
 
 .footer {
@@ -102,4 +93,11 @@ body {
     gap: 30px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.orderbutton {
+  size: 50px;
+  margin-left: center;
+  place-items: center;
+  cursor: pointer;
 }
