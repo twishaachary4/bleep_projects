@@ -1,11 +1,14 @@
+
 html,body{
     margin: 0;
     overflow-x: hidden;
     background-color: #F5F5DC;
-}
-body {
-  margin: 0;
-  background: #F5F5DC;
+    background-image: url("images/background.jpg"); 
+    background-size: cover;        
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+
 }
 
 .topbar {
@@ -24,14 +27,18 @@ body {
 
 .photo {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
-  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 40px 60px;
+
 }
 .row {
-  flex: 1;
-  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  gap: 10px;
+  padding: 30px;
 }
 
 .row h3 { font-size: 70px; margin: 0 0 8px 0; text-align: center; }
@@ -41,12 +48,17 @@ body {
 .girl {
   width: 45%;
   flex-shrink: 0;
+    align-items: center;
+
 }
 
 .girl img {
-  width: 100%;
   height: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 40px 60px;
 }
 
 
@@ -66,7 +78,7 @@ body {
   margin-left: auto;
   display: grid;
   place-items: center;
-  background: #FFFBEF;
+  background: none;
   border-radius: 20%;
   cursor: pointer;
   box-shadow: 0 3px 0 #B07D5B;
@@ -98,15 +110,8 @@ body {
 .orderbutton {
   width: 50px;
   height: 60px;
-  padding: 0;
-  margin-left: auto;
   display: grid;
-  place-items: center;
-  background: transparent;
-  border-radius: 20%;
   cursor: pointer;
-  box-shadow: 0 3px 0 #B07D5B;
-  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .orderlink{
@@ -115,14 +120,24 @@ body {
   width: 100%;
   background: none;
   border: none;
-  padding: 0;
-  box-shadow: none;
+  padding: 20px;
+  box-shadow:none;
   cursor: pointer;
 }
 
 .orderlink img {
   display: block;
   width: 250px;
-  border-radius: 20%;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
+.orderbutton:hover img{
+  transform: scale(1.05);
+  background: #94855f;
+}
+.orderbutton:active img{
+  transform: scale(0.95);
+  box-shadow: 0 0 0 #B07D5B;
+  filter: brightness(0.8);
+}
+
 
