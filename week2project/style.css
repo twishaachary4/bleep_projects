@@ -139,5 +139,9 @@ html,body{
   box-shadow: 0 0 0 #B07D5B;
   filter: brightness(0.8);
 }
-
+.product{
+  .basic{
+    align-items: center;
+  }
+}
 
